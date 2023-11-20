@@ -36,7 +36,8 @@ int selection(va_list args, char *specifiers)
     {
         _putchar('%');
         _putchar(specifiers);
-        return (2); /* because we are returning 2 chars */
+        return (2); 
+        /* 2 since we return purcent then specifier */
     }
     else /* when specifiers == NULL */
         return (_putchar('%'));
