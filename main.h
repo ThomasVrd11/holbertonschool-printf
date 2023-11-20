@@ -9,5 +9,5 @@
  *
  */
 
-int _putchar(char c);
+int _putchar(va_list args);
 #endif
