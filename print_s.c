@@ -6,7 +6,7 @@
  * Return: 0 on success
  */
 
-void print_s(char *str)
+int print_s(char *str)
 {
 	int i;
 
@@ -14,5 +14,4 @@ void print_s(char *str)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n');
 }

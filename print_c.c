@@ -1,12 +1,12 @@
 #include <unistd.h>
-
+#include "main.h"
 /**
 *_putchar - writes the character c to stdout
 *@args: variablre number of parameters
 *Return: on success 1
 */
 
-int _putchar(va_list args)
+int print_c(va_list args)
 {
 	char str;
 

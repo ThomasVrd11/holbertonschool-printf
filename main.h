@@ -6,8 +6,24 @@
 #include <unistd.h>
 
 /**
- *
+ * struct toprint - type of argument to print/ specifier letter and pointer to func
+ * @letter: type of specifier letter (format[i +1]) example d s c 
+ * @f: function that is associated with the specifier letter ^^
  */
 
-int _putchar(va_list args);
+/* -----------little typedef--------- */
+
+typedef struct toprint
+	{
+		char *letter;
+		int (*f)(va_list args);
+	} toprint_;
+
+/* -------all functions used-------- */
+
+int print_c(va_list args);
+int _printf(const char *format, ...);
+int print_s(char *str);
+
+/* --------------THE END----------- */
 #endif
