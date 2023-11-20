@@ -6,13 +6,15 @@
  * Return: 0 on success
  */
 
-void print_s(char *str)
+int print_s(char *str)
 {
+	if (str == NULL)
+	return (NULL);
+	
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n');
 }
