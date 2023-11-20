@@ -10,4 +10,5 @@
  */
 
 int _putchar(va_list args);
+void _puts(char *str);
 #endif
