@@ -20,8 +20,8 @@ int selection(va_list args, char *specifiers)
     toprint_ decide[] = {
         {"c", print_c},
         {"s", print_s},
-        {"d", print_d},
-        {"i", print_i},
+        {"d", print_deci},
+        {"i", print_int},
         {"%", print_purcent},
         {NULL, NULL}};
 

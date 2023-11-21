@@ -27,6 +27,8 @@ int _printf(const char *format, ...);
 int print_s(char *str);
 int print_int(va_list args);
 int print_deci(va_list args);
+int print_purcent(__attribute__((unused)) va_list args);
+{
 /* --------------THE END----------- */
 
 #endif
