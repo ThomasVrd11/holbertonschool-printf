@@ -12,14 +12,13 @@
  * @f: function that is associated with the specifier letter ^^
  */
 
-
 /* -----------little typedef--------- */
 
 typedef struct toprint
-	{
-		char *letter;
-		int (*f)(va_list args);
-	} toprint_;
+{
+	char *letter;
+	int (*f)(va_list args);
+} toprint_;
 
 /* -------all functions used-------- */
 
@@ -30,5 +29,6 @@ int print_int(va_list args);
 int print_deci(va_list args);
 int print_purcent(__attribute__((unused)) va_list args);
 int _putchar(char);
+int selection(va_list args, char *specifiers);
 
 #endif

@@ -16,7 +16,7 @@ int selection(va_list args, char *specifiers)
      * i int
      * % purcent specifier
      * d decimal
-    */
+     */
     toprint_ decide[] = {
         {"c", print_c},
         {"s", print_s},
@@ -25,20 +25,20 @@ int selection(va_list args, char *specifiers)
         {"%", print_purcent},
         {NULL, NULL}};
 
-    int i;
-    
-    for (int i = 0; decide[i].letter && specifiers; i++)
+    int j = 0;
+
+    while (decide[j].letter && specifiers)
     {
-        if (decide[i].letter[0] == specifiers)
-            return ((decide[i].f)(args));
+        if (decide[j].letter[0] == specifiers)
+            return ((decide[j].f)(args));
+        j++;
     }
 
     if (specifiers != '\0')
     {
         _putchar('%');
         _putchar(specifiers);
-        return (2); 
-        /* 2 since we return purcent then specifier */
+        return (2); /* because we are returning 2 chars */
     }
     else /* when specifiers == NULL */
         return (_putchar('%'));
