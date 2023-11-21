@@ -24,11 +24,11 @@ typedef struct toprint
 
 int print_c(va_list args);
 int _printf(const char *format, ...);
-int print_s(char *str);
+int print_s(va_list args);
 int print_int(va_list args);
 int print_deci(va_list args);
 int print_purcent(__attribute__((unused)) va_list args);
 int _putchar(char);
-int selection(va_list args, char *specifiers);
+int selection(va_list args, char specifiers);
 
 #endif

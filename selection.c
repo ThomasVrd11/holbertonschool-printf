@@ -7,7 +7,7 @@
  * Return: length of the string or intenger printedz
  */
 
-int selection(va_list args, char *specifiers)
+int selection(va_list args, char specifiers)
 {
 	/* theses func will be executed according to format i+1 */
 	/**
