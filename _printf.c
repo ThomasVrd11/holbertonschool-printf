@@ -32,12 +32,10 @@ int _printf(const char *format, ...)
      */
         if (format[i] == '%')
         {
-            if (format[i + 1] == '\0');
+            if (format[i + 1] == '\0')
             return (-1);
             /*+= means = and +, example C += means C = C+A (cc christophe)*/
-        /**
-         * add output length to length
-        */
+            
             length += selection(args, format[i + 1]);
             i++;
         }
@@ -51,6 +49,5 @@ int _printf(const char *format, ...)
         }
     }
     va_end(args);
-
     return (length);
 }

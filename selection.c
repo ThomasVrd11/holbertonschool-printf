@@ -41,3 +41,4 @@ int selection(va_list args, char *specifiers)
     }
     else /* when specifiers == NULL */
         return (_putchar('%'));
+}
