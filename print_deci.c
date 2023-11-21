@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
  * print_deci - prints decimal
  * @args: arguments to print
@@ -10,7 +10,6 @@ int print_deci(va_list args)
         int n;
         int char_count = 0;
         int digit;
-
 
         n = va_arg(args, int);
 
@@ -36,5 +35,4 @@ int print_deci(va_list args)
         }
 
         return (char_count);
-
 }

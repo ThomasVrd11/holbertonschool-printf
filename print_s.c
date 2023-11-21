@@ -9,8 +9,8 @@
 int print_s(char *str)
 {
 	if (str == NULL)
-	return (NULL);
-	
+		return (NULL);
+
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)

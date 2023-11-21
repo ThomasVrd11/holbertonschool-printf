@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * print_int- print integers
@@ -11,7 +11,6 @@ int print_int(va_list args)
 	int n;
 	int char_count = 0;
 	int digit;
-
 
 	n = va_arg(args, int);
 
@@ -37,5 +36,4 @@ int print_int(va_list args)
 	}
 
 	return (char_count);
-
 }
