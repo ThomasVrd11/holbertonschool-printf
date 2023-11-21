@@ -34,14 +34,14 @@ int _printf(const char *format, ...)
 			/*+= means = and +, example C += means C = C+A (cc christophe)*/
 
 			length += selection(args, format[i + 1]);
-			i++;
+			i += 2;
 		}
 		else
 		/**
 		 * print current character and add one to length
 		 */
 		{
-			length += _putchar(format[i]);
+			length = _putchar(format[i]);
 			i++;
 		}
 	}

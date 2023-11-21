@@ -37,9 +37,11 @@ int selection(va_list args, char specifiers)
 	if (specifiers != '\0')
 	{
 		_putchar('%');
-		_putchar(specifiers);
-		return (2); /* because we are returning 2 chars */
+	/* 	_putchar(specifiers); */
+		return (2); 
+		/* because we are returning 2 chars */
 	}
-	else /* when specifiers == NULL */
+	else 
+	/* when specifiers == NULL */
 		return (_putchar('%'));
 }
