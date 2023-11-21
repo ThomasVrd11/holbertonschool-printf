@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_purcent
+ * print_purcent - print the purcent sign
  * @args : list of arguments
  * Return: our little purcent specifier
  */

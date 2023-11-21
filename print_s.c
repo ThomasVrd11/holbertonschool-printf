@@ -6,15 +6,18 @@
  * Return: 0 on success
  */
 
-int print_s(char *str)
+int print_s(va_list args)
 {
-	if (str == NULL)
-	return (NULL);
-	
-	int i;
+	int i = 0;
+	char *str = va_arg(args, char *);
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (str == NULL)
+		str = "(null)";
+
+	while (str[i])
 	{
 		_putchar(str[i]);
+		i++;
 	}
+	return (i);
 }
