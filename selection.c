@@ -26,6 +26,7 @@ int selection(va_list args, char *specifiers)
         {NULL, NULL}};
 
     int i;
+    
     for (int i = 0; decide[i].letter && specifiers; i++)
     {
         if (decide[i].letter[0] == specifiers)

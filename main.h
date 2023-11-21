@@ -6,8 +6,9 @@
 #include <unistd.h>
 
 /**
- * struct toprint - type of argument to print/ specifier letter and pointer to func
- * @letter: type of specifier letter (format[i +1]) example d s c 
+ * struct toprint - type of argument to print/ specifier letter
+ *  and pointer to func
+ * @letter: type of specifier letter (format[i +1]) example d s c
  * @f: function that is associated with the specifier letter ^^
  */
 
