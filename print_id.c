@@ -5,29 +5,29 @@
  * @n: number to be printed
  * Return: the correct count
  */
+
 int print_id(int n)
 {
 	int char_count = 0;
+	unsigned int num;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		char_count++;
-	}
-
-	if (n / 10 != 0)
-	{
-		char_count += print_id(n / 10);
-	}
-
-	if (n < 0)
-	{
-		_putchar(-(n % 10) + '0');
+		num = -n;
 	}
 	else
 	{
-		_putchar((n % 10) + '0');
+		num = n;
 	}
+
+	if (num / 10 != 0)
+	{
+		char_count += print_id(num / 10);
+	}
+
+	_putchar((num % 10) + '0');
 	char_count++;
 
 	return (char_count);
