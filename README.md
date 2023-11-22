@@ -42,7 +42,7 @@ It's our take on the standard `printf` function. Here's the prototype:
 - `_printf.c`: The main attraction! Implements `_printf` that outputs formatted text.
 - `_putchar.c`: Our helper to write characters to stdout.
 - `main.h`: The header file with all the function prototypes for `_printf`.
-- `print_int.c print_deci.c print_s.c print_c.c print_purcent.c`: The core functions handling specifiers `c`, `s`, `%`, `d` and `i`.
+- `print_id.c print_int.c print_deci.c print_s.c print_c.c print_purcent.c`: The core functions handling specifiers `c`, `s`, `%`, `d` and `i`.
 - `selection.c`: Plays matchmaker, linking format specifiers to their respective functions.
 - `man_3_printf`: The manual page. Check it out by typing `man ./man_3_printf` in your terminal.
 
