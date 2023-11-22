@@ -2,7 +2,7 @@
 
 /**
  * print_s - prints string to stdout
- * @str: pointer to the  strings
+ * @args: arguments
  * Return: 0 on success
  */
 

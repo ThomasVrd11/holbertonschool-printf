@@ -18,12 +18,12 @@ int selection(va_list args, char specifiers)
 	 * d decimal
 	 */
 	toprint_ decide[] = {
-			{"c", print_c},
-			{"s", print_s},
-			{"d", print_deci},
-			{"i", print_int},
-			{"%", print_purcent},
-			{NULL, NULL}};
+		{"c", print_c},
+		{"s", print_s},
+		{"d", print_deci},
+		{"i", print_int},
+		{"%", print_purcent},
+		{NULL, NULL}};
 
 	int j = 0;
 
@@ -37,11 +37,11 @@ int selection(va_list args, char specifiers)
 	if (specifiers != '\0')
 	{
 		_putchar('%');
-	/* 	_putchar(specifiers); */
-		return (2); 
+		/* _putchar(specifiers); */
+		return (2);
 		/* because we are returning 2 chars */
 	}
-	else 
-	/* when specifiers == NULL */
+	else
+		/* when specifiers == NULL */
 		return (_putchar('%'));
 }
