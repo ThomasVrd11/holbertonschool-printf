@@ -30,5 +30,6 @@ int print_deci(va_list args);
 int print_purcent(__attribute__((unused)) va_list args);
 int _putchar(char);
 int selection(va_list args, char specifiers);
+int print_id(int n);
 
 #endif
