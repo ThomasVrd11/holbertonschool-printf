@@ -17,14 +17,14 @@ int print_int(va_list args)
 	if (n < 0)
 	{
 		_putchar('-');
-		char_count++;
 		n = -n;
+		char_count++;
 	}
 
 	if (n == 0)
 	{
 		_putchar('0');
-		return (1);
+		return (char_count);
 	}
 
 	while (n != 0)
