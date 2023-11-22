@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 		 * print current character and add one to length
 		 */
 		{
-			length = _putchar(format[i]);
+			length += _putchar(format[i]);
 			i++;
 		}
 	}
