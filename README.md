@@ -36,6 +36,19 @@ It's our take on the standard `printf` function. Here's the prototype:
 - Handled conversion specifiers `d`, `i`.
 - Whipped up a man page for our function.
 
+## Supported Format Specifiers
+
+The following table lists the format specifiers supported:
+
+| Specifier | Description               |
+|:---------:|---------------------------|
+| `%c`      | Print a character.        |
+| `%s`      | Print a string.           |
+| `%%`      | Print a percent sign.     |
+| `%i`      | Print an integer.         |
+| `%d`      | Print an integer.         |
+
+_Note: The specifiers are used in formatted output functions._
 
 
 ## File breakdown, what is what ?
