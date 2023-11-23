@@ -89,4 +89,4 @@ That's it! Enjoy using _printf, and we hope it makes your coding a bit more fun 
 Happy coding!
 ## Flowchart
 
-![My Diagram](Printf - Flowchart.png)
+![My Diagram](https://github.com/ThomasVrd11/holbertonschool-printf/blob/main/Printf%20-%20Flowchart.png?raw=true)
