@@ -19,9 +19,7 @@ int _printf(const char *format, ...)
 	{
 		return (-1);
 	}
-	/**
-	 * iterate over the format string
-	 */
+
 	while (format != NULL && format[i] != '\0')
 	{
 		/**
@@ -31,15 +29,12 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1] == '\0')
 				return (-1);
-			/*+= means = and +, example C += means C = C+A (cc christophe)*/
 
 			length += selection(args, format[i + 1]);
 			i += 2;
 		}
 		else
-		/**
-		 * print current character and add one to length
-		 */
+
 		{
 			length += _putchar(format[i]);
 			i++;
